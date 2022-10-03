@@ -29,6 +29,10 @@ WebUI.click(findTestObject('Object Repository/Login page/btn_login'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Home page/icon_profile'), 10)
 
+WebUI.scrollToElement(findTestObject('Object Repository/Home page/gallery'), 3)
+
+WebUI.takeFullPageScreenshot("D:\\full-view.png")
+
 WebUI.mouseOver(findTestObject('Object Repository/Home page/ddl_tools'))
 
 WebUI.click(findTestObject('Object Repository/Home page/item_employeeContact'))

@@ -12,10 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>796b1093-e2a5-451f-a61c-5d7f77444dcc</testSuiteGuid>
    <testCaseLink>
-      <guid>5189abe3-ce61-47c1-b59f-0e0a073232c1</guid>
+      <guid>576b9e4a-8c67-48dd-bfb1-668c5f997ec0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/iFrame Text test</testCaseId>
+      <testCaseId>Test Cases/Intranet Test</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
