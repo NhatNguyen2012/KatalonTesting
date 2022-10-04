@@ -21,9 +21,9 @@ WebUI.navigateToUrl('https://intranet.tma.com.vn/')
 
 //WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/Login page/input_fieldByText', ['text' : 'username']), GlobalVariable.USERNAME)
+WebUI.setText(findTestObject('Object Repository/Login page/input_fieldByText', ['text' : 'username']), GlobalVariable.MapCredentials.get('Username'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Login page/input_fieldByText', ['text' : 'password']), GlobalVariable.PASSWORD)
+WebUI.setEncryptedText(findTestObject('Object Repository/Login page/input_fieldByText', ['text' : 'password']), GlobalVariable.MapCredentials.get('Password'))
 
 WebUI.click(findTestObject('Object Repository/Login page/btn_login'))
 

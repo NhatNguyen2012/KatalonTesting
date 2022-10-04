@@ -6,12 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'nhnhat'</initValue>
-      <name>USERNAME</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'bmYRb6NLlNpZJeZk/qev+A=='</initValue>
-      <name>PASSWORD</name>
+      <initValue>[('Password') : 'bmYRb6NLlNpZJeZk/qev+A==', ('Username') : 'nhnhat']</initValue>
+      <name>MapCredentials</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
