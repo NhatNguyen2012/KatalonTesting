@@ -24,6 +24,10 @@ import com.kms.katalon.core.annotation.SetupTestCase
 import com.kms.katalon.core.annotation.TearDown
 import com.kms.katalon.core.annotation.TearDownTestCase
 
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.Point
+
 /**
  * Some methods below are samples for using SetUp/TearDown in a test suite.
  */
@@ -53,6 +57,11 @@ def tearDown() {
 def setupTestCase() {
 	// Put your code here.
 	WebUI.openBrowser('')
+	
+	//WebDriver driver = DriverFactory.getWebDriver()
+	//driver.manage().window().setPosition(new Point(2000, 10))
+	
+	WebUI.maximizeWindow()
 }
 
 /**

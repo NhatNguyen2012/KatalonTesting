@@ -17,9 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.navigateToUrl('https://intranet.tma.com.vn/')
+WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
+//WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://intranet.tma.com.vn/')
 
 WebUI.setText(findTestObject('Object Repository/Login page/input_fieldByText', [('text') : 'username']), Username)
 
@@ -30,6 +32,10 @@ WebUI.click(findTestObject('Object Repository/Login page/btn_login'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/Home page/icon_profile'), 10)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Home page/icon_profile'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/Home page/gallery'), 3)
+
+CustomKeywords.'com.huunhat.utilities.screenshotConvention.takeScreenshotFormat'(GlobalVariable.screenshotPath)
 
 WebUI.mouseOver(findTestObject('Object Repository/Home page/ddl_tools'))
 
@@ -51,3 +57,6 @@ WebUI.click(findTestObject('Object Repository/Login page/input_fieldByText', ['t
 CustomKeywords.'com.huunhat.utilities.CommonUtilities.loopThroughTable'(findTestObject('Object Repository/HRM Tool page/table_result'))
 
 WebUI.closeWindowIndex(1)
+
+//WebUI.closeBrowser()
+

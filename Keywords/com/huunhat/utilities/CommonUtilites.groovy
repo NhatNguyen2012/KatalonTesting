@@ -36,22 +36,22 @@ public class CommonUtilities {
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		'To calculate no of rows In table'
 		int rows_count = rows_table.size()
-		 
+
 		'Loop will execute for all the rows of the table'
 		for (int row = 0; row < rows_count; row++) {
 			'To locate columns(cells) of that specific row'
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
-		 
+
 			'To calculate no of columns(cells) In that specific row'
 			int columns_count = Columns_row.size()
-		 
+
 			println((('Number of cells In Row ' + (row + 1) ) + ' are ') + columns_count)
-		 
+
 			'Loop will execute till the last cell of that specific row'
 			for (int column = 0; column < columns_count; column++) {
 				'It will retrieve text from each cell'
 				String celltext = Columns_row.get(column).getText()
-		 
+
 				println((((('Cell Value Of row number ' + (row + 1)) + ' and column number ') + (column + 1)) + ' Is ') + celltext)
 			}
 		}

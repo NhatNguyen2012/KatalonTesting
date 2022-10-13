@@ -1,18 +1,18 @@
 {
-  "keywordFileContentHash": "116188572DC42142956C2E64F66AE444",
+  "keywordFileContentHash": "B2D34D292204048F9D6BE4EAABB663C3",
   "keywordClasses": [
     {
-      "name": "com.huunhat.utilities.CommonUtilities",
+      "name": "com.huunhat.utilities.screenshotConvention",
       "keywordMethods": [
         {
-          "name": "loopThroughTable",
+          "name": "takeScreenshotFormat",
           "parameters": [
             {
-              "name": "object",
+              "name": "path",
               "initialExpression": "",
               "type": {
-                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
-                "unresolvedClassName": "TestObject",
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": false,
