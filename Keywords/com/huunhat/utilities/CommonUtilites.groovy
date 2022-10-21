@@ -24,6 +24,11 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
+import java.time.ZoneOffset
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import com.kms.katalon.core.configuration.RunConfiguration
+
 public class CommonUtilities {
 	@Keyword
 	def loopThroughTable(TestObject object) {
@@ -55,5 +60,20 @@ public class CommonUtilities {
 				println((((('Cell Value Of row number ' + (row + 1)) + ' and column number ') + (column + 1)) + ' Is ') + celltext)
 			}
 		}
+	}
+	
+	
+	private static ZoneOffset myZoneOffset = ZoneOffset.of("+7")
+	private static DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy-HH.mm.ss")
+
+	@Keyword
+	def takeScreenshotFormat(String path) {
+		LocalDateTime now = LocalDateTime.now(myZoneOffset)
+
+		String dateTime = dtFormatter.format(now)
+		//String TCName = RunConfiguration.getExecutionSource().toString().substring(RunConfiguration.getExecutionSource().toString().lastIndexOf("\\")+1)
+		String completePath = path + GlobalVariable.testCaseName + '-' + dateTime + ".png"
+
+		WebUI.takeScreenshot(completePath)
 	}
 }

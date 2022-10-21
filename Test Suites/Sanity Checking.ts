@@ -38,14 +38,14 @@
       <variableLink>
          <testDataLinkId>64f5fd6a-c8a5-4d92-a2b4-b683857f3af6</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Username</value>
-         <variableId>7805e0d7-6d0c-4498-bcce-7b70b6eba263</variableId>
+         <value>DataUsername</value>
+         <variableId>07b00acd-2301-43d5-9525-b15af4da9167</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>dcb7f31f-edfa-40e9-b894-0a3cbf1cb54c</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Password</value>
-         <variableId>043b3b3b-606f-48d2-be3d-1fbd230d2268</variableId>
+         <value>DataPassword</value>
+         <variableId>14af6809-c98a-4d07-9187-34f295ee0fe0</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

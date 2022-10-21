@@ -17,17 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
+//WebUI.openBrowser('')
+//
 //WebUI.maximizeWindow()
+//
+//WebUI.navigateToUrl('https://intranet.tma.com.vn/')
+//
+//WebUI.setText(findTestObject('Object Repository/Login page/input_fieldByText', [('text') : 'username']), Username)
+//
+//WebUI.setEncryptedText(findTestObject('Object Repository/Login page/input_fieldByText', [('text') : 'password']), Password)
 
-WebUI.navigateToUrl('https://intranet.tma.com.vn/')
+WebUI.callTestCase(findTestCase('Test Cases/Data-Driven Testing/Login Test'), [('Username') : DataUsername, ('Password') : DataPassword])
 
-WebUI.setText(findTestObject('Object Repository/Login page/input_fieldByText', [('text') : 'username']), Username)
+//WebUI.click(findTestObject('Object Repository/Login page/btn_login'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Login page/input_fieldByText', [('text') : 'password']), Password)
-
-WebUI.click(findTestObject('Object Repository/Login page/btn_login'))
+WebUI.submit(findTestObject('Object Repository/Home page/form_login'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Home page/icon_profile'), 10)
 
@@ -35,13 +39,13 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/Home page/icon_prof
 
 WebUI.scrollToElement(findTestObject('Object Repository/Home page/gallery'), 3)
 
-CustomKeywords.'com.huunhat.utilities.screenshotConvention.takeScreenshotFormat'(GlobalVariable.screenshotPath)
+CustomKeywords.'com.huunhat.utilities.CommonUtilities.takeScreenshotFormat'(GlobalVariable.screenshotPath)
 
 WebUI.mouseOver(findTestObject('Object Repository/Home page/ddl_tools'))
 
 WebUI.click(findTestObject('Object Repository/Home page/item_employeeContact'))
 
-//WebUI.submit(findTestObject('')) => có thể làm với cái này?
+//WebUI.sendKeys(findTestObject('Object Repository/Home page/gallery'), Keys.chord(Keys.CONTROL, 'n'))
 
 WebUI.switchToWindowIndex(1)
 //WebUI.waitForElementPresent(findTestObject('Object Repository/HRM Tool page/ddl_filter'), 5, FailureHandling.OPTIONAL)
@@ -58,5 +62,5 @@ CustomKeywords.'com.huunhat.utilities.CommonUtilities.loopThroughTable'(findTest
 
 WebUI.closeWindowIndex(1)
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 

@@ -14,7 +14,7 @@
    <data>html</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
-      <name>Username</name>
+      <name>DataUsername</name>
       <size>4</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

@@ -9,26 +9,26 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7805e0d7-6d0c-4498-bcce-7b70b6eba263</variableId>
+      <variableId>07b00acd-2301-43d5-9525-b15af4da9167</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>043b3b3b-606f-48d2-be3d-1fbd230d2268</variableId>
+      <variableId>14af6809-c98a-4d07-9187-34f295ee0fe0</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'nhnhat'</defaultValue>
       <description></description>
-      <id>7805e0d7-6d0c-4498-bcce-7b70b6eba263</id>
+      <id>07b00acd-2301-43d5-9525-b15af4da9167</id>
       <masked>false</masked>
-      <name>Username</name>
+      <name>DataUsername</name>
    </variable>
    <variable>
       <defaultValue>'bmYRb6NLlNpZJeZk/qev+A=='</defaultValue>
       <description></description>
-      <id>043b3b3b-606f-48d2-be3d-1fbd230d2268</id>
+      <id>14af6809-c98a-4d07-9187-34f295ee0fe0</id>
       <masked>false</masked>
-      <name>Password</name>
+      <name>DataPassword</name>
    </variable>
 </TestCaseEntity>
